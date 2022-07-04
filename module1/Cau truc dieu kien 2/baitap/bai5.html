@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</title>
+</head>
+<body>
+<script>
+    let a = Number(prompt('Điểm kiểm tra 15p',''));
+    let b = Number(prompt('Điểm thi giữa kỳ',''));
+    let c = Number(prompt('Điểm thi cuối kỳ',''));
+    let tb = (a + b*2 + c*3)/6;
+    if(tb >= 8.5){
+        document.write('Học lực của bạn là: Giỏi');
+    }else if(tb > 6.5){
+        document.write('Học lực của bạn là: Khá');
+    }else if(tb > 4.5){
+        document.write('Học lực của bạn là: Trung bình');
+    }else {
+        document.write('Học lực của bạn là: Yếu ');
+    }
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển từ mét sang feet:</title>
+</head>
+<body>
+<script>
+    let m = prompt('Nhập mét: ');
+    if (m > 0){
+        let ft = parseInt(m)*3.2808;
+        alert('feet = ' + ft);
+    }else {
+        alert('số mét không được âm');
+    }
+</script>
+</body>
+</html>
