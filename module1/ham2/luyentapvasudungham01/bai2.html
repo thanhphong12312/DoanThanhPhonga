@@ -5,6 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-
+<input type="text" id="Input"><button onclick="Transfer()">Transfer</button>
+<script>
+          function Transfer() {
+              let i = parseInt(document.getElementById("Input").value);
+              i = i + 1;
+              document.getElementById("Input").value = i;
+          }
+</script>
 </body>
 </html>
