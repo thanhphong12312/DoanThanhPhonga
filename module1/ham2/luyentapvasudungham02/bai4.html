@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectangle</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100"></canvas>
+<script>
+    let Rectangle = function (width, height) {
+        this.width = Number(width);
+        this.height = Number(height);
+        this.dienTich = function () {
+            return this.width * this.height;
+        };
+        return this.width * this.height;
+    };
+    this.chuVi = function () {
+        return (this.width + this.height) * 2;
+    };
+    this.draw = function () {
+        let c = document.getElementById("canvas");
+        let ctx = c.getContext("2d");
+    }
+    let hcn = new Rectangle(1,1);
+    function document() {
+        window.addEventListener("keydown",function (e) {
+            if (e.key ==="Enter"){
+                hcn.width = Number(document.getElementById("width").value);
+                hcn.height = Number(document.getElementById("height").value);
+                hcn.draw();
+                document.getElementById("output").innerHTML =
+                    "chu vi là: "+hcn.chuVi()
+                    +", diện tích là: "+hcn.dienTich();
+            }
+        })
+    }
+</script>
+</body>
+</html>
